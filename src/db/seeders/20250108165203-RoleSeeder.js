@@ -12,7 +12,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('People', [
+    await queryInterface.bulkInsert('Roles', [
       {
         name:"SUPER_ADMIN",
         active:true,
@@ -41,5 +41,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
+    await queryInterface.bulkDelete('Roles', null, {});
   }
 };
